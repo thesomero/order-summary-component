@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  /* background-color: hsl(224, 23%, 55%); */
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  background-color: white;
+  width: 330px;
+  height: 530px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.avatar {
+  width: 330px;
+  margin-bottom: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.details-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: 900;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 85%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.method-design {
+  display: flex;
+  align-items: center;
+}
+
+.payment-duration {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: 100;
+  color: hsl(224, 23%, 55%);
+  /* text-align: center; */
+}
+
+.edit-profile {
+  font-size: 5px;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  transition: color 0.3s ease;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  height: 48px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: hsl(245, 59%, 62%);
+}
+
+.cancel {
+  font-size: 12px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
